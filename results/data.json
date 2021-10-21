@@ -1,0 +1,325 @@
+{
+ "services": [
+  {
+   "nested_ftn_stmts": "\tvar input = req.params.id;\n\tvar idd2 = input;\n\tvar temp5 = idd2-1;\n\tvar temp6 = _states.PROPERTIES[temp5];\n\toutput = temp6;\n", 
+   "ftn_stmts": "function s1(input){\n\tvar idd2 = input;\n\tvar temp5 = idd2-1;\n\tvar temp6 = PROPERTIES[temp5];\n\tvar output = temp6;\n\treturn output;\n}\n", 
+   "server_return": {
+    "city": "Boston", 
+    "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08sq.jpg", 
+    "title": "Condominium Redefined", 
+    "price": "$475,000", 
+    "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08wide.jpg", 
+    "broker": {
+     "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg", 
+     "title": "Senior Broker", 
+     "id": 1, 
+     "name": "Caroline Kingsley"
+    }, 
+    "beds": 2, 
+    "state": "MA", 
+    "likes": 5, 
+    "baths": 2, 
+    "id": 1, 
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+   }, 
+   "rule": "req.url.match(/\\//properties/:id\\/[0-9.]+/)!==null  && req.method == 'get'", 
+   "path": "/properties/:id", 
+   "ftn": "s1", 
+   "method": "get", 
+   "client_params": 1
+  }, 
+  {
+   "nested_ftn_stmts": "\tvar tmpv0 = _states.PROPERTIES\n\toutput = tmpv0;\n", 
+   "ftn_stmts": "function s2(){\n\tvar tmpv0 = PROPERTIES;\n\tvar output = tmpv0;\n\treturn output;\n}\n", 
+   "server_return": [
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08sq.jpg", 
+     "title": "Condominium Redefined", 
+     "price": "$475,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg", 
+      "title": "Senior Broker", 
+      "id": 1, 
+      "name": "Caroline Kingsley"
+     }, 
+     "beds": 2, 
+     "state": "MA", 
+     "likes": 5, 
+     "baths": 2, 
+     "id": 1, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Cambridge", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02sq.jpg", 
+     "title": "Ultimate Sophistication", 
+     "price": "$1,200,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg", 
+      "title": "Senior Broker", 
+      "id": 2, 
+      "name": "Michael Jones"
+     }, 
+     "beds": 5, 
+     "state": "MA", 
+     "likes": 2, 
+     "baths": 4, 
+     "id": 2, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09sq.jpg", 
+     "title": "Seaport District Retreat", 
+     "price": "$650,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg", 
+      "title": "Senior Broker", 
+      "id": 3, 
+      "name": "Jonathan Bradley"
+     }, 
+     "beds": 3, 
+     "state": "MA", 
+     "likes": 6, 
+     "baths": 2, 
+     "id": 3, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house14sq.jpg", 
+     "title": "Modern City Living", 
+     "price": "$875,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house14.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg", 
+      "title": "Senior Broker", 
+      "id": 4, 
+      "name": "Jennifer Wu"
+     }, 
+     "beds": 3, 
+     "state": "MA", 
+     "likes": 12, 
+     "baths": 2, 
+     "id": 4, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03sq.jpg", 
+     "zip": "02420", 
+     "title": "Urban Efficiency", 
+     "price": "$425,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg", 
+      "title": "Senior Broker", 
+      "id": 5, 
+      "name": "Olivia Green"
+     }, 
+     "beds": 4, 
+     "state": "MA", 
+     "likes": 5, 
+     "baths": 2, 
+     "id": 5, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05sq.jpg", 
+     "title": "Waterfront in the City", 
+     "price": "$550,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/miriam_aupont.jpg", 
+      "title": "Senior Broker", 
+      "id": 6, 
+      "name": "Miriam Aupont"
+     }, 
+     "beds": 3, 
+     "state": "MA", 
+     "likes": 14, 
+     "baths": 2, 
+     "id": 6, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Brookline", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07sq.jpg", 
+     "zip": "02420", 
+     "title": "Suburban Extravaganza", 
+     "price": "$850,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michelle_lambert.jpg", 
+      "title": "Senior Broker", 
+      "id": 7, 
+      "name": "Michelle Lambert"
+     }, 
+     "beds": 5, 
+     "state": "MA", 
+     "likes": 5, 
+     "baths": 4, 
+     "id": 7, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12sq.jpg", 
+     "zip": "02420", 
+     "title": "Contemporary Luxury", 
+     "price": "$925,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/victor_ochoa.jpg", 
+      "title": "Senior Broker", 
+      "id": 8, 
+      "name": "Victor Oachoa"
+     }, 
+     "id": 8, 
+     "beds": 6, 
+     "state": "MA", 
+     "likes": 8, 
+     "baths": 6, 
+     "sqft": 950, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Cambridge", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10sq.jpg", 
+     "zip": "02420", 
+     "title": "Heart of Harvard Square", 
+     "price": "$550,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg", 
+      "title": "Senior Broker", 
+      "id": 1, 
+      "name": "Caroline Kingsley"
+     }, 
+     "beds": 5, 
+     "state": "MA", 
+     "likes": 9, 
+     "baths": 4, 
+     "id": 9, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11sq.jpg", 
+     "zip": "02420", 
+     "title": "Architectural Details", 
+     "price": "$375,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg", 
+      "title": "Senior Broker", 
+      "id": 2, 
+      "name": "Michael Jones"
+     }, 
+     "beds": 2, 
+     "state": "MA", 
+     "likes": 10, 
+     "baths": 2, 
+     "id": 10, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house13sq.jpg", 
+     "zip": "02420", 
+     "title": "Modern Elegance", 
+     "price": "$495,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house13wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg", 
+      "title": "Senior Broker", 
+      "id": 3, 
+      "name": "Jonathan Bradley"
+     }, 
+     "beds": 2, 
+     "state": "MA", 
+     "likes": 16, 
+     "baths": 2, 
+     "id": 11, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Boston", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06sq.jpg", 
+     "zip": "02420", 
+     "title": "Stunning Colonial", 
+     "price": "$625,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg", 
+      "title": "Senior Broker", 
+      "id": 4, 
+      "name": "Jennifer Wu"
+     }, 
+     "beds": 4, 
+     "state": "MA", 
+     "likes": 9, 
+     "baths": 2, 
+     "id": 12, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Cambridge", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04sq.jpg", 
+     "zip": "02420", 
+     "title": "Quiet Retreat", 
+     "price": "$430,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg", 
+      "title": "Senior Broker", 
+      "id": 5, 
+      "name": "Olivia Green"
+     }, 
+     "beds": 5, 
+     "state": "MA", 
+     "likes": 18, 
+     "baths": 4, 
+     "id": 13, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }, 
+    {
+     "city": "Cambridge", 
+     "thumb": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01sq.jpg", 
+     "zip": "01742", 
+     "title": "Victorian Revival", 
+     "price": "$450,000", 
+     "pic": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01wide.jpg", 
+     "broker": {
+      "picture": "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/miriam_aupont.jpg", 
+      "title": "Senior Broker", 
+      "id": 6, 
+      "name": "Miriam Aupont"
+     }, 
+     "id": 14, 
+     "beds": 4, 
+     "state": "MA", 
+     "likes": 10, 
+     "baths": 3, 
+     "sqft": 3800, 
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+    }
+   ], 
+   "rule": "req.url =='/properties' && req.method == 'get'", 
+   "path": "/properties", 
+   "method": "get", 
+   "ftn": "s2"
+  }
+ ], 
+ "snapshot": "./snapshot.json", 
+ "CLOUD_URL_PORT": "http://127.0.0.1:5005", 
+ "EDGE_URL_PORT": "http://127.0.0.1:5000", 
+ "dep_stmts": [
+  "var PROPERTIES = require('./dVXRLg').data;"
+ ]
+}
